@@ -1,0 +1,34 @@
+﻿
+
+
+@if (viewModel == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    @if (viewModel.userList.Count > 0)
+    {
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Active</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var dt in viewModel.userList)
+            {
+            <tr>
+                <td>@dt.Name</td>
+                <td>@dt.Email</td>
+                <td>@dt.PhoneNo</td>
+                <td>@(dt.IsActive == true ? "Yes" : "No")</td>
+            </tr>
+            }
+        </tbody>
+    </table>         
+        }
+    }

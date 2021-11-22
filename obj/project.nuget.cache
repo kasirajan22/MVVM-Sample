@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0FqpiYVItiCzYYzVP2mDtxCnI74hxoyyFx5f5E8zBYIofX+AzDqbr8rU+uneXYfjp380067cEIt3a5nzO7r3FQ==",
+  "success": true,
+  "projectFilePath": "/Users/magizhan/DotNet/MVVM-Sample/MVVM-Sample/MVVM-Sample.csproj",
+  "expectedPackageFiles": [
+    "/Users/magizhan/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.12/microsoft.netcore.app.host.osx-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

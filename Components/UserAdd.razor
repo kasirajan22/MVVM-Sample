@@ -1,0 +1,25 @@
+﻿
+
+
+<EditForm Model="@viewModel.user" OnValidSubmit="@SaveToDB">
+    <div class="col-4">
+        <div class="form-group">
+            <label for="title">Name</label>
+            <InputText class="form-control" id="Name" @bind-Value=@viewModel.user.Name />
+        </div>
+        <div class="form-group">
+            <label for="date">Email</label>
+            <InputText class="form-control" id="Email" @bind-Value=@viewModel.user.Email />
+        </div>
+        <div class="form-group">
+            <label for="notes">Phone</label>
+            <InputText class="form-control" id="PhoneNo" @bind-Value=@viewModel.user.PhoneNo />
+        </div>
+        <div class="form-check">
+            <InputCheckbox class="form-check-input" id="IsActive" @bind-Value=@viewModel.user.IsActive />
+            <label for="done" class="form-check-label">Active</label>
+        </div>
+        <input type="hidden" @bind-value="@viewModel.user.UserUID" />
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+</EditForm>
